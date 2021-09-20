@@ -1,0 +1,74 @@
+@use 'variaveis' as v;
+.l-footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.104);
+    // background: linear-gradient(135deg, v.$orange, v.$pink);
+    // background-size: 350%;
+    // animation: mover 5s ease-in-out infinite alternate-reverse;
+    // border-top: 1px solid lighten($color: v.$darkblue, $amount: 15);
+    border-top: 1px solid darken($color: v.$paleta02, $amount: 19);
+    // border-bottom: 1px solid lighten($color: v.$darkblue, $amount: 15);
+    background: linear-gradient(to right, darken(v.$paleta02, 26), darken(v.$paleta02, 25));
+    // background-color: v.$darkblue;
+    &__text-box {
+        &__p {
+            // color: white;
+            color: lighten($color: v.$paleta04, $amount: 20);
+            font-size: 14px;
+            text-align: center;
+            & a {
+                cursor: pointer;
+                color: lighten($color: v.$paleta04, $amount: 32);
+                transition: 200ms ease;
+                &:hover {
+                    color: lighten($color: v.$paleta04, $amount: 40);
+                }
+            }
+        }
+        &__dev {
+            font-size: 10px;
+        }
+    }
+    &__redes-sociais {
+        margin-top: 10px;
+        // justify-content: center;
+        display: flex;
+        align-items: center;
+        &__item {
+            width: 30px;
+            height: 30px;
+            transition: 200ms ease;
+            &:hover {
+                cursor: pointer;
+                transform: scale(0.9);
+            }
+        }
+        &__email {
+            margin: 0 10px 0 9px;
+        }
+    }
+}
+
+@media (min-width: v.$medium) {
+    .l-footer {
+        flex-direction: row;
+        justify-content: center;
+        &__text-box {
+            margin-right: 90px;
+        }
+        &__redes-sociais {
+            margin: 0 0 0 90px;
+        }
+    }
+}
+
+// @keyframes mover {
+//     to {
+//         background-position: right;
+//     }
+// }

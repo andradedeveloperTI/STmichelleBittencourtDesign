@@ -1,0 +1,33 @@
+@use 'reset';
+@use 'header';
+@use 'btn-menu';
+@use 'menu';
+@use 'main';
+@use 'footer';
+@use 'utilitarios';
+// @use 'servicos';
+// @use 'variaveis' as v;
+// ######### BODY ###########
+// body {
+//     display: grid;
+//     grid-template-areas: "header" "main" "footer";
+//     grid-template-columns: 1fr;
+//     grid-template-rows: 100px 1fr 120px;
+// }
+// @media (min-width: v.$medium) {
+//     body {
+//         grid-template-areas: "header header header" ". main ." "footer footer footer";
+//         grid-template-columns: 1fr v.$medium 1fr;
+//         grid-template-rows: 300px 1fr 100px;
+//     }
+// }
+// @media (min-width: v.$large) {
+//     body {
+//         grid-template-columns: 1fr v.$large 1fr;
+//     }
+// }
+// @media (min-width: v.$big-large) {
+//     body {
+//         grid-template-columns: 1fr v.$big-large 1fr;
+//     }
+// }

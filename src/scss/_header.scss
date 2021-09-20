@@ -1,0 +1,105 @@
+@use 'variaveis' as v;
+@use 'mixin' as m;
+@use 'sass:color' as c;
+.l-header {
+    grid-area: header;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 74px;
+    display: flex;
+    justify-content: start;
+    padding-left: 8px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.104);
+    // background: linear-gradient(90deg, v.$orange, v.$pink);
+    // animation: mover 5s ease-in-out infinite alternate-reverse;
+    // background-size: 350%;
+    // background-color: lighten($color: v.$darkblue, $amount: 7);
+    // border-bottom: 1px solid lighten($color: v.$darkblue, $amount: 15);
+    // background: linear-gradient(to right, darken(v.$paleta02, 26), darken(v.$paleta02, 25));
+    // background: linear-gradient(to right, c.scale(v.$paleta02, $alpha: -50%), c.scale(v.$paleta02, $alpha: -50%));
+    border-bottom: 1px solid darken($color: v.$paleta02, $amount: 19);
+    background-color: c.scale(darken(v.$paleta02, 25), $alpha: -7%);
+    &__box-logo {
+        display: grid;
+        place-items: center;
+        & a {
+            width: 130px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: .4;
+            animation: opacidade 1500ms ease-in-out forwards;
+            & .logo {
+                width: 33px;
+                height: 33px;
+                margin-right: 4px;
+                background-image: url(../_imgs/logo.png);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                // background-color: red;
+            }
+            & .title {
+                // outline: none;
+                // background-color: red;
+                font-size: .8rem;
+                line-height: .9rem;
+                font-weight: 600;
+                letter-spacing: 1px;
+                // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.46);
+                // color: rgb(255, 231, 187);
+                color: v.$paleta04;
+                // color: lighten($color: v.$palate04, $amount: 15);
+                & span {
+                    font-weight: 800;
+                    letter-spacing: 2px;
+                    // color: rgb(255, 244, 224);
+                    // color: v.$orange;
+                    color: lighten($color: v.$paleta04, $amount: 15);
+                    // color: v.$bege-l;
+                }
+            }
+        }
+    }
+}
+
+@keyframes opacidade {
+    to {
+        opacity: 1;
+    }
+}
+
+@media (min-width: v.$medium) {
+    .l-header {
+        height: 100px;
+        &__box-logo {
+            & a {
+                width: 170px;
+                height: 60px;
+                cursor: pointer;
+                // background-color: red;
+                & .logo {
+                    width: 43px;
+                    height: 43px;
+                }
+                & .title {
+                    font-size: 1rem;
+                    line-height: 1.1rem;
+                    letter-spacing: 2px;
+                    & span {
+                        letter-spacing: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: v.$large) {
+    .l-header__box-logo {
+        position: absolute;
+        top: 20px;
+        left: 85px;
+    }
+}

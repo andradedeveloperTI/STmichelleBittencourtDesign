@@ -1,0 +1,94 @@
+
+font-family: 'Nova Mono', monospace;
+font-family: 'Galada', cursive;
+font-family: 'Comfortaa', cursive;  300 500 700
+font-family: 'Squada One', cursive;
+font-family: 'Lexend Exa', sans-serif;
+font-family: 'Open Sans', sans-serif; 300 300italico 400 400italico 600 600italico 700 800 800italico
+
+busca do google: 
+site de um profissional de design grafico
+https://www.google.com/search?q=site+de+um+profissional+de+design+grafico&sxsrf=ALeKk005HQCkispPJGZ7Pq2jAs9K_Yj0XA:1628605835626&ei=i40SYdzOJc_M1sQP2r2cmAo&start=160&sa=N&ved=2ahUKEwicwL7C1abyAhVPppUCHdoeB6M4lgEQ8tMDegQIARBI&biw=948&bih=919
+
+busca do google:
+freelancer design grafico
+https://www.google.com/search?q=freelancer+designer+grafico&sxsrf=ALeKk00cceDkvTqh9dxmA5dwOgguQTLwAg:1628811688234&ei=qLEVYZ7bDeXT1sQPnPS9kAg&start=70&sa=N&ved=2ahUKEwiez9Sw1KzyAhXlqZUCHRx6D4I4PBDy0wN6BAgBEEg&biw=1317&bih=919
+
+mariana mendes
+https://marianemendes.com.br/
+
+bruno laurino
+https://www.brunolaurino.com.br/
+
+
+referencia cabecalho
+https://pt.vecteezy.com/
+
+pagina secundaria com botao de fechar ou avançar para o proximo serviço (boa referencia de estrutura geral)
+https://www.carolinisantos.com.br/portfolio
+
+contato estilo modal
+https://www.danielasn.com/sobre
+
+cor dos itens do portifolio no hover no desktop
+https://www.stilgraf.com.br/?utm_source=google&utm_medium=cpc&utm_campaign=search21&https%3A%2F%2Fwww_stilgraf_com_br%2F%3Futm_source=google&gclid=CjwKCAjwjdOIBhA_EiwAHz8xm30g53yksMuqysDjJ-f26lUOPLGkY3owj7EN8Pqvyi_qSs57j2JBZxoCUAgQAvD_BwE
+
+referencia estrutura separada
+https://jondesign.com.br/work
+
+referencia cabecalho
+https://nove.digital/identidade-visual/?gclid=CjwKCAjwpMOIBhBAEiwAy5M6YK5PMziVsaPPPxVb_xwx3DwdkRhKqp5bLhiJ3urV0NZuEKh2Sok3DRoCF5EQAvD_BwE#nossas-criacoes
+
+por que sua marca precisa de uma identidade visual?
+https://lfsilva.com.br/lp/?gclid=CjwKCAjwx8iIBhBwEiwA2quaq6eEmOb_5iMAWqOxQ0EoMcChXgXBNbdpngGHVw9R2OIE8_cNddhYXRoC6-IQAvD_BwE
+
+referencia portifolio com seleção de tipos, o que fazemos?
+https://www.dmdesign.com.br/
+
+referencia menu
+https://www.iconfinder.com/ 
+
+por que o design importa, abeneficios de fazer sua identidade visual comigo, ver mais trabalhos
+https://www.marcelacavalini.com/?gclid=CjwKCAjwpMOIBhBAEiwAy5M6YAqA9oqELDCsdqaXGLrVICYaJqW6PQpMDrIh3nfg7GFU49l2KPDLYxoCWaQQAvD_BwE
+REFERENCIA PARA PAGINA DA GALERIA
+
+cabecalho com slogan
+https://carlosroque.com.br/?gclid=CjwKCAjwpMOIBhBAEiwAy5M6YI6k6gXeaOJ3ObUQurI3npFmmwtBGk8tcAzPJZNZ2b-d-jAr7IptiRoCPaUQAvD_BwE
+
+o que sua empresa precisa, bom design
+https://cylus.com.br/sobre/?gclid=CjwKCAjwpMOIBhBAEiwAy5M6YCTZZd9hOzd5uIz4RGb712_bMmiOuHZv7Qk-I6XoqUDoIJH69AndjhoCC4QQAvD_BwE
+
+perguntas frequentes
+https://thiagofacchini.com.br/?gclid=CjwKCAjwpMOIBhBAEiwAy5M6YLvkEUY41sdFMFysUMDijfIEg7CX6uCSVE2BFeydrWncMACh9UTY2BoCkfQQAvD_BwE
+
+menu estilo modal
+cabecalho (com slogan || minha apresentação )
+seções:
+(introdução) por que o design importa?
+serviços
+meus trabalhos (talvez estilo carrossel)
+portifólio
+cor dos itens do portifolio no hover no desktop
+botao saiba mais nas imgs do portifolio
+o que fazemos? (descrição sobre os serviços logo abaixo do portifolio)
+ver mais trabalhos
+beneficios de fazer sua identidade visual comigo
+o que sua empresa precisa
+depoimentos/ testemunhos /feedback de clientes
+quem sou
+as paginas secundarias podem ter as imgs em carrossel do insta
+orçamento
+contato
+contato(estilo modal)
+formulario
+perguntas frequentes
+pagina secundaria com botao de fechar ou avançar para o proximo serviço
+botao de zap (chamativo, piscando), botao para cima
+aceitar cookies?
+
+cabecalho (logo, nome, btn) abaixo uma descrição dos serviços
+o que fazemos?
+portifolio
+quem sou
+serviços
+contato

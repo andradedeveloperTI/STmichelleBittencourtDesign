@@ -1,0 +1,99 @@
+.l-servicos {
+  width: 100%;
+  padding: 115px 0px 60px 0px;
+}
+.l-servicos__apresentacao {
+  width: 100%;
+  max-width: 900px;
+}
+.l-servicos__apresentacao__title {
+  padding-left: 35px;
+  margin-bottom: 15px;
+}
+.l-servicos__apresentacao hr {
+  width: 50px;
+  border: 2px dashed #f75c03;
+  margin-bottom: 20px;
+  margin-left: 35px;
+}
+.l-servicos__apresentacao__p {
+  padding: 0px 35px;
+  margin-bottom: 30px;
+}
+.l-servicos__box-servicos {
+  width: 100%;
+  padding: 50px 20px;
+  display: grid;
+  place-items: center;
+  background-color: #26033d;
+  border-top: 1px solid #38045b;
+  border-bottom: 1px solid #38045b;
+}
+.l-servicos__box-servicos__inner-box-servicos {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  max-width: 770px;
+  gap: 50px;
+}
+.l-servicos__box-servicos__inner-box-servicos .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 25px;
+  width: 100%;
+  max-width: 360px;
+  border-radius: 5px;
+  height: 450px;
+  background-color: white;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+.l-servicos__box-servicos__inner-box-servicos .item .svg {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 10px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+.l-servicos__box-servicos__inner-box-servicos .item .svg01 {
+  background-image: url(../_imgs/impressora2orange.png);
+}
+.l-servicos__box-servicos__inner-box-servicos .item .svg02 {
+  background-image: url(../_imgs/boneca3.png);
+}
+.l-servicos__box-servicos__inner-box-servicos .item .svg03 {
+  background-image: url(../_imgs/logotipo-svg.png);
+}
+.l-servicos__box-servicos__inner-box-servicos .item .svg04 {
+  background-image: url(../_imgs/vicio-em-midia-social2.png);
+}
+.l-servicos__box-servicos__inner-box-servicos .item h3 {
+  color: #fd8540;
+  margin-bottom: 15px;
+  font-size: 24px;
+  line-height: 1.1em;
+  letter-spacing: 0.5px;
+}
+.l-servicos__box-servicos__inner-box-servicos .item hr {
+  width: 50px;
+  border: 2px dashed #fc7b31;
+  margin-bottom: 15px;
+}
+.l-servicos__box-servicos__inner-box-servicos .item p {
+  color: #fc7b31;
+}
+
+@media (min-width: 768px) {
+  .l-servicos__apresentacao {
+    margin: 100px auto;
+  }
+  .l-servicos__box-servicos__inner-box-servicos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+/*# sourceMappingURL=servicos.css.map */

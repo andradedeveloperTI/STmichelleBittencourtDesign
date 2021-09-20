@@ -1,0 +1,107 @@
+.l-portifolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 110px 0px 60px 0px;
+}
+.l-portifolio__apresentacao {
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+.l-portifolio__apresentacao__title {
+  padding-left: 35px;
+  margin-bottom: 15px;
+}
+.l-portifolio__apresentacao hr {
+  width: 50px;
+  border: 2px dashed #f75c03;
+  margin-bottom: 20px;
+  margin-left: 35px;
+}
+.l-portifolio__apresentacao__p {
+  padding: 0px 35px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .l-portifolio__apresentacao__p {
+    font-size: 18px;
+  }
+}
+.c-box-portifolio {
+  width: 100%;
+  padding: 0 15px 25px 15px;
+  background-color: #26033d;
+  border-top: 1px solid #38045b;
+  border-bottom: 1px solid #38045b;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.104);
+}
+.c-box-portifolio__title {
+  margin: 20px 10px;
+  color: #fd9b63;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-bottom: 2px solid #fc7b31;
+}
+.c-box-portifolio__galeria {
+  width: 100%;
+  display: grid;
+  gap: 15px;
+}
+.c-box-portifolio__galeria a {
+  position: relative;
+  width: 100%;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.426);
+  overflow: hidden;
+  border-radius: 10px;
+}
+.c-box-portifolio__galeria a:active {
+  transform: scale(0.977);
+}
+.c-box-portifolio__galeria a span {
+  position: absolute;
+  width: 7%;
+  height: 7%;
+  top: 90%;
+  left: 90%;
+  z-index: 1;
+  background-image: url(../_imgs/click3.png);
+  background-repeat: no-repeat;
+  background-size: 95%;
+  opacity: 0.2;
+  background-position: center;
+}
+.c-box-portifolio__galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: center;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 768px) {
+  .c-box-portifolio__galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1000px) {
+  .c-box-portifolio__galeria {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .c-box-portifolio__galeria img {
+    transition: transform 300ms ease;
+  }
+  .c-box-portifolio__galeria img:hover {
+    transform: scale(1.1);
+  }
+  .c-box-portifolio__galeria img:hover ~ span {
+    transition: all 200ms ease;
+    transform: scale(0.9) rotate(-15deg);
+  }
+
+  .c-box-portifolio__title {
+    margin-left: 30px;
+  }
+}
+
+/*# sourceMappingURL=portifolio.css.map */

@@ -1,0 +1,50 @@
+@use 'variaveis' as v;
+@use 'sass:color' as c;
+@use 'mixin' as m;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+    // background-color: v.$darkblue;
+    // background: linear-gradient(135deg, v.$darkblue, v.$darkblue, v.$darkblueblack);
+}
+
+body {
+    // background: linear-gradient(to right bottom, darken(v.$paleta02, 33), darken(v.$paleta02, 30));
+    background-color: darken($color: v.$paleta02, $amount: 26);
+    // background-color: darken($color: v.$darkblue, $amount: 2);
+    // background: linear-gradient(to bottom, darken(v.$darkblue, 3%), v.$darkblue, darken(v.$darkblue, 3%));
+    // background-color: darkblue;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// ::-webkit-scrollbar {
+//     width: 4px;
+// }
+// ::-webkit-moz-scrollbar {
+//     width: 4px;
+// }
+//  ::-webkit-scrollbar-thumb {
+//     background: c.scale(v.$orange, $alpha: -50%);
+//     // background: linear-gradient(to bottom, v.$orange, v.$pink);
+//     border-radius: 10px;
+//     /* background: linear-gradient(transparent, red); */
+// }
+// ::-webkit-moz-scrollbar-thumb {
+//     background: c.scale(v.$orange, $alpha: -50%);
+//     // background: linear-gradient(to bottom, v.$orange, v.$pink);
+//     border-radius: 10px;
+//     /* background: linear-gradient(transparent, red); */
+// }

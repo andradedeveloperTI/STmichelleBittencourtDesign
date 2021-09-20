@@ -1,0 +1,18 @@
+@use 'sass:color' as c;
+@mixin box-shadow($color: black, $amount: -60%) {
+    box-shadow: 3px 3px 10px c.scale($color, $alpha: $amount);
+}
+
+@mixin bounce {
+    animation: bounce 1000ms ease 2 forwards;
+    @keyframes bounce {
+        20%,
+        40% {
+            transform: translateX(-10px);
+        }
+        30%,
+        60% {
+            transform: translateX(10px);
+        }
+    }
+}

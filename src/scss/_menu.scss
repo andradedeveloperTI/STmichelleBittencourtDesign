@@ -1,0 +1,128 @@
+@use 'variaveis' as v;
+@use 'sass:color' as c;
+// .c-menu {
+//     overflow: hidden;
+//     position: fixed;
+//     top: 0px;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     // background-color: blue;
+//     z-index: 2;
+//     &__ul {
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         // left: 200px;
+//         width: 0%;
+//         height: 0%;
+//         // border-radius: 100%;
+//         background-color: red;
+//         transition: all 2s;
+//     }
+// }
+// .crescer {
+//     width: 100%;
+//     height: 100%;
+// }
+// #######################################
+// .c-menu {
+//     &__ul {
+//         position: fixed;
+//         overflow: hidden;
+//         top: 0;
+//         right: 0;
+//         width: 0;
+//         height: 100%;
+//         z-index: 2;
+//         background-color: orange;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         transition: all 300ms ease;
+//     }
+// }
+// .crescer {
+//     width: 50%;
+// }
+.c-menu {
+    &__ul {
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        // background-color: v.$darkblue;
+        background: linear-gradient(to right bottom, c.scale(darken(v.$paleta02, 25), $alpha: -5%), c.scale(darken(v.$paleta02, 28), $alpha: -5%));
+        // c.scale(darken(v.$paleta02, 25), $alpha: -7%)
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s;
+    }
+    &__li {
+        width: 100%;
+        // background-color: aqua;
+        text-align: center;
+        margin: 2px 0;
+    }
+    &__a {
+        padding: 10px;
+        color: v.$paleta04;
+        display: block;
+        // background-color: red;
+        font-size: 170%;
+        letter-spacing: 1px;
+        font-weight: bold;
+        transition: 150ms ease-in-out;
+    }
+}
+
+.crescer {
+    visibility: visible;
+    opacity: 1;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+@media (min-width: v.$large) {
+    .c-menu__ul {
+        visibility: visible;
+        flex-direction: row;
+        width: 450px;
+        height: 30px;
+        top: 33px;
+        background: transparent;
+        left: calc(100% - 530px);
+        // left: 100%;
+        // background-color: red;
+        // right: 50px;
+        opacity: .4;
+        animation: opacidade 1500ms ease-in-out forwards;
+    }
+    .c-menu__li {
+        // background-color: transparent;
+    }
+    .c-menu__a {
+        font-size: 1rem;
+        letter-spacing: 2px;
+        // background-color: white;
+        &:hover {
+            transform: scale(1.1);
+            color: lighten($color: v.$paleta04, $amount: 20);
+        }
+    }
+}
+
+@keyframes opacidade {
+    to {
+        opacity: 1;
+    }
+}

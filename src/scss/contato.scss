@@ -1,0 +1,161 @@
+@use 'variaveis' as v;
+@use 'mixin' as m;
+
+/*
+############## CONTATO #############*/
+
+.l-contato {
+    width: 100%;
+    // padding: 115px 20px 60px 20px;
+    padding: 115px 0px 60px 0px;
+    // color: white;
+    &__apresentacao {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        &__title {
+            margin-bottom: 15px;
+            padding-left: 35px;
+            // text-align: center;
+            // font-weight: 600;
+            // color: v.$bege-l;
+        }
+        & hr {
+            width: 50px;
+            border: 2px dashed v.$paleta04;
+            margin-bottom: 20px;
+            margin-left: 35px;
+        }
+        &__p {
+            margin-bottom: 50px;
+            // color: v.$bege-l;
+            padding: 0 35px;
+        }
+    }
+    &__contatos {
+        text-align: center;
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & a {
+            // width: 90%;
+            // max-width: 700px;
+            color: v.$orange;
+            padding: 4px 0px;
+            margin: 4px 0;
+            background-size: 150%;
+            font-size: 14px;
+            // border-radius: 20px;
+            cursor: pointer;
+            // border-bottom: 1px solid v.$orange;
+            transition: transform 30ms ease, color 300ms ease;
+            &:active {
+                transform: scale(.977);
+            }
+            &:hover {
+                color: lighten($color: v.$orange, $amount: 15);
+            }
+        }
+    }
+}
+
+.c-box-form {
+    width: 100%;
+    // background-color: v.$darkblue;
+    padding: 0 20px;
+    // height: 500px;
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // width: 100%;
+        width: 100%;
+        max-width: 660px;
+        margin: auto;
+        padding: 60px 20px;
+        background-color: white;
+        border-radius: v.$border-radius-default;
+        @include m.box-shadow;
+        &__title {
+            width: 100%;
+            color: lighten($color: v.$orange, $amount: 7);
+            text-align: center;
+            margin-bottom: 35px;
+        }
+        &__input {
+            width: 100%;
+            height: 30px;
+            padding: 5px;
+            // background-color: green;
+            border: unset;
+            border-radius: v.$border-radius-default;
+            outline: 0;
+            &:focus+.c-box-form__form__border::after {
+                width: 100%;
+            }
+            &::placeholder {
+                color: lighten($color: v.$orange, $amount: 7);
+            }
+        }
+        &__border {
+            height: 1px;
+            width: 100%;
+            margin-bottom: 16px;
+            background-color: lighten($color: v.$orange, $amount: 37);
+            transition: .3s ease;
+            &::after {
+                content: "";
+                display: block;
+                height: 1px;
+                width: 0;
+                margin-bottom: 16px;
+                background-color: v.$orange;
+                transition: 500ms ease;
+            }
+        }
+        &__message {
+            resize: vertical;
+            height: 70px;
+            // background-color: lighten($color: v.$orange, $amount: 48);
+            background-color: rgb(243, 243, 243);
+        }
+        &__btn {
+            outline: 0;
+            padding: 7px 40px;
+            // background: linear-gradient(135deg, v.$orange, v.$pink);
+            // background-size: 150%;
+            margin-top: 32px;
+            color: lighten($color: v.$orange, $amount: 7);
+            font-size: 18px;
+            font-weight: 800;
+            background-color: white;
+            border: none;
+            border: 2px solid lighten($color: v.$orange, $amount: 7);
+            border-radius: 20px;
+            cursor: pointer;
+            letter-spacing: 1px;
+            transition: transform 30ms ease;
+            &:active {
+                transform: scale(.977);
+            }
+        }
+    }
+}
+
+@media (min-width: v.$large) {
+    .c-box-form__form__btn {
+        &:hover {
+            @include m.bounce;
+        }
+    }
+}
+
+@media (min-width: v.$medium) {
+    .l-contato {
+        &__apresentacao {
+            margin: 100px auto 70px auto;
+        }
+    }
+}

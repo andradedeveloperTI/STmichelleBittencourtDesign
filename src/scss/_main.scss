@@ -1,0 +1,10 @@
+// @use 'variaveis' as v;
+// .l-main {
+//     grid-area: main;
+//     position: relative;
+// }
+.l-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

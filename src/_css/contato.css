@@ -1,0 +1,145 @@
+/*
+############## CONTATO #############*/
+.l-contato {
+  width: 100%;
+  padding: 115px 0px 60px 0px;
+}
+.l-contato__apresentacao {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.l-contato__apresentacao__title {
+  margin-bottom: 15px;
+  padding-left: 35px;
+}
+.l-contato__apresentacao hr {
+  width: 50px;
+  border: 2px dashed #f75c03;
+  margin-bottom: 20px;
+  margin-left: 35px;
+}
+.l-contato__apresentacao__p {
+  margin-bottom: 50px;
+  padding: 0 35px;
+}
+.l-contato__contatos {
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.l-contato__contatos a {
+  color: #f75c03;
+  padding: 4px 0px;
+  margin: 4px 0;
+  background-size: 150%;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 30ms ease, color 300ms ease;
+}
+.l-contato__contatos a:active {
+  transform: scale(0.977);
+}
+.l-contato__contatos a:hover {
+  color: #fd8b4a;
+}
+
+.c-box-form {
+  width: 100%;
+  padding: 0 20px;
+}
+.c-box-form__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 660px;
+  margin: auto;
+  padding: 60px 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+.c-box-form__form__title {
+  width: 100%;
+  color: #fc7121;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.c-box-form__form__input {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  border: unset;
+  border-radius: 5px;
+  outline: 0;
+}
+.c-box-form__form__input:focus + .c-box-form__form__border::after {
+  width: 100%;
+}
+.c-box-form__form__input::placeholder {
+  color: #fc7121;
+}
+.c-box-form__form__border {
+  height: 1px;
+  width: 100%;
+  margin-bottom: 16px;
+  background-color: #fed2b9;
+  transition: 0.3s ease;
+}
+.c-box-form__form__border::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0;
+  margin-bottom: 16px;
+  background-color: #f75c03;
+  transition: 500ms ease;
+}
+.c-box-form__form__message {
+  resize: vertical;
+  height: 70px;
+  background-color: #f3f3f3;
+}
+.c-box-form__form__btn {
+  outline: 0;
+  padding: 7px 40px;
+  margin-top: 32px;
+  color: #fc7121;
+  font-size: 18px;
+  font-weight: 800;
+  background-color: white;
+  border: none;
+  border: 2px solid #fc7121;
+  border-radius: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: transform 30ms ease;
+}
+.c-box-form__form__btn:active {
+  transform: scale(0.977);
+}
+
+@media (min-width: 1000px) {
+  .c-box-form__form__btn:hover {
+    animation: bounce 1000ms ease 2 forwards;
+  }
+  @keyframes bounce {
+    20%, 40% {
+      transform: translateX(-10px);
+    }
+    30%, 60% {
+      transform: translateX(10px);
+    }
+  }
+}
+@media (min-width: 768px) {
+  .l-contato__apresentacao {
+    margin: 100px auto 70px auto;
+  }
+}
+
+/*# sourceMappingURL=contato.css.map */
